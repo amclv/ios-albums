@@ -1,15 +1,22 @@
 //
-//  AlbumsTableViewController.swift
+//  AlbumDetailTableViewController.swift
 //  Albums
 //
-//  Created by Aaron Cleveland on 2/10/20.
+//  Created by Aaron Cleveland on 2/11/20.
 //  Copyright © 2020 Aaron Cleveland. All rights reserved.
 //
 
 import UIKit
 
-class AlbumsTableViewController: UITableViewController {
+class AlbumDetailTableViewController: UITableViewController {
 
+    @IBOutlet weak var albumName: UITextField!
+    @IBOutlet weak var artistName: UITextField!
+    @IBOutlet weak var genre: UITextField!
+    @IBOutlet weak var coverArt: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +25,10 @@ class AlbumsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
     }
     
     // MARK: - Table view data source
